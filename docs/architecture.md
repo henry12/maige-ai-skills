@@ -20,8 +20,9 @@ maige-ai-skills/
 │   ├── getting-started.md    # 当前可用性与未来首次成功流程
 │   ├── compatibility.md      # 实测环境和证据
 │   ├── roadmap.md            # 优先级与进入条件
-│   ├── animation-handoff.md  # 给动画实现会话的接入要求
-│   └── release-checklist.md  # 发布前检查
+│   ├── release-checklist.md  # 发布前检查
+│   └── animation/           # 动画能力专属文档
+│       └── handoff.md       # 给动画实现会话的接入要求
 ├── skills/
 │   └── README.md             # 只登记真正接入的 Skill
 ├── examples/
@@ -64,7 +65,8 @@ examples/animation/<case-slug>/
 - 动画组件先放在动画 Skill 内。只有至少两个真实消费者需要共享时，才考虑独立共享包。
 - `examples/` 服务展示和复现记录，不能成为安装单个 Skill 后缺失的运行依赖。最小样例以 Skill 内版本为准，案例文档指向它，避免重复维护。
 - `templates/` 只存接入规范，不放可被安装器误识别的伪 Skill。
-- `docs/` 记录跨 Skill 的项目约定，具体执行方法放回对应 Skill。
+- `docs/` 根目录记录跨 Skill 的项目约定；能力专属的接入、设计和维护文档放入 `docs/<能力>/`，例如 `docs/animation/`。PPT 等能力有实际文档时再创建对应目录。
+- 安装和运行所必需的说明仍随对应 Skill 分发；不能依赖用户同时下载 `docs/`。
 - 先不创建 `apps/`、`website/`、`packages/` 或通用安装器；需求出现后再增加。
 
 ## 版本与交付

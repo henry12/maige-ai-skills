@@ -14,7 +14,7 @@
 | 了解当前能否安装使用 | [使用说明](docs/getting-started.md) |
 | 查看 Agent 产品验证情况 | [兼容性记录](docs/compatibility.md) |
 | 查看首发与后续方向 | [路线图](docs/roadmap.md) |
-| 把已有动画能力接入本项目 | [动画接入清单](docs/animation-handoff.md) |
+| 把已有动画能力接入本项目 | [动画接入清单](docs/animation/handoff.md) |
 | 贡献一个完整 Skill | [贡献指南](CONTRIBUTING.md)与[包规范](templates/skill-package.md) |
 | 提供使用反馈 | [GitHub Issues](https://github.com/henry12/maige-ai-skills/issues) |
 
