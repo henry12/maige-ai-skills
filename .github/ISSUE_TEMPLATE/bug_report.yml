@@ -1,0 +1,28 @@
+name: 问题反馈
+description: 文档、安装、生成、预览或修改遇到问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: "当前是筹备仓库，尚无可安装 Skill。请勿提交密钥、私人材料或未脱敏日志。"
+  - type: input
+    id: version
+    attributes:
+      label: Skill 或文档，以及版本
+      description: 填写文件、提交号或发布版本。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 使用环境
+      description: Agent 产品及版本、操作系统、模型与必要依赖；文档问题可填不适用。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 重现步骤、预期和实际结果
+      description: 优先使用随包样例或脱敏的最小输入。
+    validations:
+      required: true
